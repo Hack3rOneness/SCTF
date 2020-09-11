@@ -73,3 +73,4 @@ Unidecode==1.0.22
 urllib3==1.24
 wcwidth==0.1.7
 zope.interface==4.6.0
+pyenchant==3.1.1
