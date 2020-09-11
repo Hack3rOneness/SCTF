@@ -204,5 +204,5 @@ STATICFILES_DIRS = (
 )
 
 # Disabling Collectstatic
-$ heroku config:set DISABLE_COLLECTSTATIC=1
+heroku config:set DISABLE_COLLECTSTATIC=1
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
