@@ -191,3 +191,5 @@ CONSTANCE_CONFIG = {
     'GAME_DURATION_MINS': (0, 'Duration Minutes'),
     'GAME_START_DATETIME': (datetime.now(pytz.utc), 'Duration Minutes', datetime),
 }
+# Disabling Collectstatic
+heroku config:set DISABLE_COLLECTSTATIC=1
