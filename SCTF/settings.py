@@ -69,6 +69,7 @@ MIDDLEWARE = [
     'accounts.middleware.LoggedInUserWithoutProfileMiddleware',
     'accounts.middleware.LoggedInUserWithoutTeamMiddleware',
     'SCTF.middleware.FilterRequestByGameStateMiddlewareMixin',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'SCTF.urls'
@@ -193,3 +194,4 @@ CONSTANCE_CONFIG = {
 }
 # Disabling Collectstatic
 heroku config:set DISABLE_COLLECTSTATIC=1
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
