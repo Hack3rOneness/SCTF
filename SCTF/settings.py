@@ -219,4 +219,5 @@ STATICFILES_DIRS = (
 
 # Disabling Collectstatic
 # set DISABLE_COLLECTSTATIC=1
+DISABLE_COLLECTSTATIC=1
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
