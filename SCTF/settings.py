@@ -14,6 +14,8 @@ import os
 from django.urls.base import reverse_lazy
 from registration_defaults.settings import *
 import pytz
+import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,9 +42,10 @@ os.path.join(BASE_DIR, 'static'),
 SECRET_KEY = 'pw4sgxo_esjfpo7$fyc5vcb#ib3xi*yh$23lt1i#70bed6=^cz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['nhcctf.herokuapp.com',
+                'whispering-bastion-87009.herokuapp.com']
 
 
 # Application definition
@@ -221,3 +224,5 @@ STATICFILES_DIRS = (
 # set DISABLE_COLLECTSTATIC=1
 # DISABLE_COLLECTSTATIC=1
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Activate Django-Heroku
+django_heroku.settings(locals())
