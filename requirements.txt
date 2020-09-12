@@ -74,3 +74,9 @@ urllib3==1.24
 wcwidth==0.1.7
 whitenoise==5.2.0
 zope.interface==4.6.0
+dj-database-url
+django-heroku
+gunicorn
+psycopg2
+python-decouple
+whitenoise
