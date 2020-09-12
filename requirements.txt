@@ -79,4 +79,3 @@ django-heroku
 gunicorn
 psycopg2
 python-decouple
-whitenoise
